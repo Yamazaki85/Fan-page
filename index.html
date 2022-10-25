@@ -1,24 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width-device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Fan Page of Queen</title>
-  </head>
-</html>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ed Sheeran's Fan Page</title>
+</head>
 <body>
   <header>
     <h1>Ed Sheeran</h1>
-    <img src="https://i.iheart.com/v3/catalog/artist/396790?ops=fit(480%2C480)%2Crun(%22circle%22)" class="img-thumbnail">
+    <figure>
+      <img src="https://i.iheart.com/v3/catalog/artist/396790?ops=fit(480%2C480)%2Crun(%22circle%22)" class="img-thumbnail">
+    </figure>
     <h2>Navigational Links</h1>
     <nav>
       <ul>
         <li>
-          <a href="https://en.wikipedia.org/wiki/Ed_Sheeran">Wikipedia</a>
+          <a href="https://en.wikipedia.org/wiki/Ed_Sheeran" target="_blank">Wikipedia</a>
+
         </li>
         <li>
-          <a href="https://www.edsheeran.com/NATour">NA Tour</a>
+          <a href="https://www.edsheeran.com/NATour" target="_blank">NA Tour</a>
         </li>
       </ul>
     </nav>
@@ -39,7 +41,11 @@
                         <li>No.6 Collaborations Project</li>
                         <li>=</li>
                     </ol>
-                    <img src="https://pbs.twimg.com/media/FOE32FCVQBgK565?format=jpg&name=360x360"class="img-thumbnail">
+                    <figure>
+                      <figcaption>Albums</figcaption>
+                      <img src="https://pbs.twimg.com/media/FOE32FCVQBgK565?format=jpg&name=360x360"class="img-thumbnail">
+                    </figure>
+
                     <h3>Upcoming Tour</h3>
                     <table>
                         <thead>
@@ -81,13 +87,19 @@
         </section>
         <section>
 <h2>SURVEY FOR FANS</h2>
-<section class="song">
+<form action="./confirmation.html">
+  <section class="song">
     <label for="favorite song">What is your favorite song?</label>
     <input type="text" name="favorite song" id="favorite song">
 </section>
 <hr>
 <section class="concerts">
+  <br>
+  <br>
+  <br>
     <span>Have you been to his concerts?</span>
+    <br>
+    <br>
     <br>
 <input type="radio" name="concerts" id="yes" value="yes">
     <label for="yes">Yes</label>  
@@ -97,6 +109,8 @@
    <hr>
    <section class="album">
 <span>What is your favorite album?</span>
+<br>
+<br>
 <br>
 <input type="checkbox" name="album" id="+", value="+">
 <label for="+">+</label>
@@ -111,7 +125,6 @@
    <section class="videos">
   <label for="video">What is your favorite music video?</label>
 <input list="videos" id="video" name="video">
-
 <datalist id="videos">
   <option value="Bad Habits"></option>
   <option value="Shape of You"></option>
@@ -119,6 +132,9 @@
 </datalist>
    </section>
    <hr>
+   <br>
+   <br>
+   <br>
    <section>
 <label for="meet">Would you like to meet him?</label>
 <select id="meet" name="meet" required>
@@ -126,10 +142,17 @@
     <option value="no">NO</option>
     <option value="not sure">NOT SURE</option>
 </select>
+</form>
+<br>
+<br>
+<br>
 <hr>
-<input type="submit" value="Submit">
-
+<a href="./confirmation.html">  
+  <input type="submit" value="Submit">
    </section>
-
   </main>
+  <footer>
+    <h3>Thank you!</h3>
+  </footer>
 </body>
+</html>
